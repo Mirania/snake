@@ -120,7 +120,7 @@ public class Board {
         int r, c;
         do {
             r = Utils.random(0, rows-1);
-            c = Utils.random(0, rows-1);
+            c = Utils.random(0, cols-1);
         } while (board[r][c].isSnake || board[r][c].isApple);
 
         Point p = new Point(r,c);
